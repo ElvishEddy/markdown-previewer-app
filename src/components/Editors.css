@@ -1,0 +1,15 @@
+.editor {
+  width: 100%;
+  min-height: 200px;
+  margin-bottom: -5px;
+  resize: vertical;
+  outline: none;
+  padding-left: 5px;
+  padding-top: 5px;
+  font-size: 0.875rem;
+  background-color: #c0d8d8;
+}
+
+.editor.maximize {
+  min-height: 800px;
+}

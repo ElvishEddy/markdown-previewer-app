@@ -1,7 +1,19 @@
 import React from "react";
 
-function Previewer() {
-  return <div>Previewer</div>;
+import "./Previewer.css";
+import { marked } from "marked";
+
+function Previewer(props) {
+  const { text } = props;
+
+  return (
+    <div
+      id="preview"
+      dangerouslySetInnerHTML={{
+        __html: marked(text),
+      }}
+    />
+  );
 }
 
 export default Previewer;
