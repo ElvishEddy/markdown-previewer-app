@@ -1,0 +1,19 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: rgb(97, 158, 158, 0.65);
+}
+
+.editor-wrapper {
+  max-width: 600px;
+  margin: 1.125rem auto;
+}
+
+.previewer-wrapper {
+  max-width: 800px;
+  margin: 1.125rem auto;
+}

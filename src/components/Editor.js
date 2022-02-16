@@ -1,10 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 
-import { placeholder } from "../data";
-function Editor() {
+import "./Editors.css";
+
+function Editor(props) {
+  const { textData, handleTextChange } = props;
+  const { text, editorExpand, previewExpand } = textData;
+
   return (
     <>
-      <textarea id="editor" value={placeholder} />
+      <textarea
+        id="editor"
+        value={text}
+        onChange={handleTextChange}
+        className={"editor" + " " + (editorExpand ? "maximize" : "")}
+      />
     </>
   );
 }
